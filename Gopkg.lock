@@ -2,17 +2,19 @@
 
 
 [[projects]]
+  branch = "master"
   name = "github.com/docker/spdystream"
   packages = [
     ".",
     "spdy"
   ]
-  revision = "449fdfce4d962303d702fec724ef0ad181c92528"
+  revision = "bc6354cbbc295e925e4c611ffe90c1f287ee54db"
 
 [[projects]]
   name = "github.com/ghodss/yaml"
   packages = ["."]
-  revision = "73d445a93680fa1a78ae23a5839bad48f32ba1ee"
+  revision = "0ca9ea5df5451ffdf184b4428c902747c2c11cd7"
+  version = "v1.0.0"
 
 [[projects]]
   name = "github.com/gogo/protobuf"
@@ -20,7 +22,8 @@
     "proto",
     "sortkeys"
   ]
-  revision = "c0656edd0d9eab7c66d1eb0c568f9039345796f7"
+  revision = "1adfc126b41513cc696b209667c8656ea7aac67c"
+  version = "v1.0.0"
 
 [[projects]]
   branch = "master"
@@ -37,7 +40,8 @@
     "ptypes/duration",
     "ptypes/timestamp"
   ]
-  revision = "1643683e1b54a9e88ad26d98f81400c8c9d9f4f9"
+  revision = "b4deda0973fb4c70b50d226b1af49f3da59f5265"
+  version = "v1.1.0"
 
 [[projects]]
   branch = "master"
@@ -46,9 +50,10 @@
   revision = "e89373fe6b4a7413d7acd6da1725b83ef713e6e4"
 
 [[projects]]
+  branch = "master"
   name = "github.com/google/gofuzz"
   packages = ["."]
-  revision = "44d81051d367757e1c7c6a5a86423ece9afcf63c"
+  revision = "24818f796faf91cd76ec7bddd72458fbced7a6c1"
 
 [[projects]]
   name = "github.com/googleapis/gnostic"
@@ -57,7 +62,8 @@
     "compiler",
     "extensions"
   ]
-  revision = "0c5108395e2debce0d731cf0287ddf7242066aba"
+  revision = "7c663266750e7d82587642f65e60bc4083f1f84e"
+  version = "v0.2.0"
 
 [[projects]]
   branch = "master"
@@ -82,8 +88,8 @@
 [[projects]]
   name = "github.com/json-iterator/go"
   packages = ["."]
-  revision = "0ac74bba4a81211b28e32ef260c0f16ae41f1377"
-  version = "1.1.1"
+  revision = "ab8a2e0c74be9d3be70b3184d9acc634935ded82"
+  version = "1.1.4"
 
 [[projects]]
   name = "github.com/juju/ratelimit"
@@ -100,12 +106,12 @@
 [[projects]]
   name = "github.com/modern-go/reflect2"
   packages = ["."]
-  revision = "05fbef0ca5da472bbf96c9322b84a53edc03c9fd"
+  revision = "4b7aa43c6742a2c18fdef89dd197aaae7dac7ccd"
+  version = "1.0.1"
 
 [[projects]]
   name = "github.com/onsi/gomega"
   packages = [
-    ".",
     "format",
     "internal/assertion",
     "internal/asyncassertion",
@@ -148,13 +154,15 @@
   version = "0.9.1"
 
 [[projects]]
+  branch = "master"
   name = "golang.org/x/crypto"
   packages = ["ssh/terminal"]
-  revision = "81e90905daefcd6fd217b62423c0908922eadb30"
+  revision = "a49355c7e3f8fe157a85be2f77e6e269a0f89602"
 
 [[projects]]
   name = "golang.org/x/net"
   packages = [
+    "context",
     "html",
     "html/atom",
     "html/charset",
@@ -172,7 +180,7 @@
     "unix",
     "windows"
   ]
-  revision = "a200a19cb90b19de298170992778b1fda7217bd6"
+  revision = "7138fd3d9dc8335c567ca206f4333fb75eb05d56"
 
 [[projects]]
   name = "golang.org/x/text"
@@ -208,10 +216,15 @@
   version = "v0.3.0"
 
 [[projects]]
+  name = "golang.org/x/time"
+  packages = ["rate"]
+  revision = "f51c12702a4d776e4c1fa9b0fabab841babae631"
+
+[[projects]]
   name = "gopkg.in/inf.v0"
   packages = ["."]
-  revision = "3887ee99ecf07df5b447e9b00d9c0b2adaa9f3e4"
-  version = "v0.9.0"
+  revision = "d2d2541c53f18d2a059457998ce2876cc8e67cbf"
+  version = "v0.9.1"
 
 [[projects]]
   name = "gopkg.in/yaml.v2"
@@ -252,9 +265,10 @@
     "storage/v1alpha1",
     "storage/v1beta1"
   ]
-  revision = "00c78f6603af046dfcada47ba511ddc94e7a64ce"
+  revision = "655e4e87cb5a855657ad325d1a615cf870870c9d"
 
 [[projects]]
+  branch = "master"
   name = "k8s.io/apimachinery"
   packages = [
     "pkg/api/errors",
@@ -297,7 +311,7 @@
     "third_party/forked/golang/netutil",
     "third_party/forked/golang/reflect"
   ]
-  revision = "1c56055d3f2ff0ae5ff61d86dc8c88d2928b7ab3"
+  revision = "49fb9c9ee47ede1ead7dc90a697c0652526b072c"
 
 [[projects]]
   name = "k8s.io/client-go"
@@ -333,7 +347,10 @@
     "kubernetes/typed/storage/v1",
     "kubernetes/typed/storage/v1alpha1",
     "kubernetes/typed/storage/v1beta1",
+    "pkg/apis/clientauthentication",
+    "pkg/apis/clientauthentication/v1alpha1",
     "pkg/version",
+    "plugin/pkg/client/auth/exec",
     "rest",
     "rest/watch",
     "tools/auth",
@@ -352,12 +369,12 @@
     "util/homedir",
     "util/integer"
   ]
-  revision = "78700dec6369ba22221b72770783300f143df150"
-  version = "v6.0.0"
+  revision = "23781f4d6632d88e869066eaebb743857aa1ef9b"
+  version = "v7.0.0"
 
 [solve-meta]
   analyzer-name = "dep"
   analyzer-version = 1
-  inputs-digest = "d1f05c432757413e2cca6c4d35106584bd0f48121f9f3b3768e19741c44bcb29"
+  inputs-digest = "52674c6d8005df92972516e8770368224e3f464d4c0c62bbc3b375d523db2e82"
   solver-name = "gps-cdcl"
   solver-version = 1
